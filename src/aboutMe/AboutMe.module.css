@@ -1,0 +1,45 @@
+.aboutMe {
+    height: 100vh;
+    background-color: #8c4949;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    background-color: #5A5B5F;
+    text-align: center;
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.info {
+    max-width: 300px;
+}
+
+.photo {
+    width: 450px;
+    height: 350px;
+    background-color: #acb5d5;
+}
+
+
+@media (max-width: 1300px) {
+    .content {
+        justify-content: center;
+    }
+    .info {
+        text-align: center;
+    }
+}
