@@ -2,7 +2,7 @@ import React from 'react';
 import styles from "./MyProject.module.css"
 import stylesContainer from "../common/styles/Container.module.css"
 import {Project} from "./project/Project";
-import {Title} from "../common/components/Title";
+import {Title} from "../common/components/Title/Title";
 
 type ProjectType = {
     id: number
@@ -15,18 +15,18 @@ export const MyProject = () => {
     const projects: Array <ProjectType> = [
         {
             id: 1,
-            title: "JS",
-            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+            title: "Social network",
+            description: "React"
         },
         {
             id: 2,
-            title: "HTML",
-            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+            title: "Todolist",
+            description: "React"
         },
         {
             id: 3,
-            title: "CSS",
-            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+            title: "Landing page",
+            description: "HTML"
         },
     ]
 
