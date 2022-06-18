@@ -1,11 +1,17 @@
 .title {
     margin: 0 0 30px;
-
-    color: #5ac24e;
+    color: #fff;
     font-weight: 600;
     letter-spacing: 1px;
     font-size: 40px;
     line-height: 40px;
     text-align: center;
+}
 
+.title:after {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: #5ac24e;
+    margin-top: 5px;
 }

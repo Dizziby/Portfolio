@@ -1,6 +1,7 @@
 .contacts {
-    height: 100vh;
-    background-color: #4A4D49;
+    min-height: 100vh;
+    height: 100%;
+    background-color: #27292d;
 }
 
 .container {
@@ -11,24 +12,26 @@
 }
 
 .content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*flex-wrap: wrap;*/
 
-    width: 100%;
+    /*width: 100%;*/
 }
 
 .contactsInfo {
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
-    flex: 0 0 30%;
+    flex-wrap: wrap;
+    border: 1px solid;
+    width: 100%;
+
 }
 
 .form {
     display: flex;
     flex-direction: column;
-    flex: 0 0 70%;
+
 }
 
 .form input {
