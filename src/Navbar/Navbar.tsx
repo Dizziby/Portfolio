@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from "./Navbar.module.css"
+import styles from "./Navbar.module.scss"
 import {faEnvelope, faEye, faGear, faHouse, faUser} from "@fortawesome/free-solid-svg-icons";
-import {faFacebook, faGithub, faLinkedin, faTwitter} from "@fortawesome/free-brands-svg-icons";
+import {faFacebook, faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 export const Navbar = () => {

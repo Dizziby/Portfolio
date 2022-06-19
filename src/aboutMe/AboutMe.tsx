@@ -1,10 +1,11 @@
 import React from 'react';
-import styles from "./AboutMe.module.css"
+import styles from "./AboutMe.module.scss"
 import stylesContainer from "../common/styles/Container.module.css"
 import {Title} from "../common/components/Title/Title";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faPenToSquare} from '@fortawesome/free-solid-svg-icons'
 import {faFacebook, faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
+import myPhoto from "../img/myPhoto.jpg"
 
 export const AboutMe = () => {
     return (
@@ -32,7 +33,7 @@ export const AboutMe = () => {
                                target="_blank"><FontAwesomeIcon className={styles.iconSocial} icon={faLinkedin}/></a>
                         </div>
                     </div>
-                    <div className={styles.photo}></div>
+                    <img src={myPhoto} className={styles.photo} alt={"myPhoto"} />
                 </div>
             </div>
         </div>

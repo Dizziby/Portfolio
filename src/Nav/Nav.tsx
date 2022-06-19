@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "./Nav.module.css"
+import styles from "./Nav.module.scss"
 import stylesContainer from "../common/styles/Container.module.css"
 
 export const Nav = () => {
@@ -8,11 +8,10 @@ export const Nav = () => {
             <div className={`${stylesContainer.container} ${styles.container}`}>
                 <a href="#">Home</a>
                 <a href="#">About Me</a>
-                <a href="#">My Skills</a>
+                <a href="#">Resume</a>
                 <a href="#">My Project</a>
                 <a href="#">Contacts</a>
             </div>
-
         </div>
     );
 };

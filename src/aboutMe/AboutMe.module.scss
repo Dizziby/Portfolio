@@ -1,3 +1,5 @@
+@import './src/common/styles/variables';
+
 .aboutMe {
     display: flex;
     flex-direction: column;
@@ -19,9 +21,6 @@
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-
-    border: 1px solid green;
-
 }
 
 .info {
@@ -38,7 +37,7 @@
 }
 
 .text strong {
-    color: #5ac24e;
+    color: $baseColor;
     font-weight: 700;
 }
 
@@ -54,6 +53,12 @@
     border-radius: 30px;
     background-color: rgba(255,255,255,.05);
     margin-right: 20px;
+    transition: color .2s linear;
+}
+
+.links a:hover {
+    color: $baseColor;
+
 }
 
 .buttonLink {
@@ -85,7 +90,5 @@
 }
 
 .photo {
-    width: 500px;
-    height: 600px;
-    background-color: #acb5d5;
+    width: 400px;
 }

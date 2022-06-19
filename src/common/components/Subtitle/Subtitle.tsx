@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "./Subtitle.module.css";
+import styles from "./Subtitle.module.scss";
 
 type SubtitlePropsType = {
     firstWordTitle: string
