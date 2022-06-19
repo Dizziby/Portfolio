@@ -1,0 +1,48 @@
+.navbar {
+    position: fixed;
+    background-color: #202120;
+    max-height: 100vh;
+    height: 100%;
+    width: 50px;
+
+    border: 1px solid green;
+}
+
+.linksPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    top: 200px;
+    left: 0;
+    max-height: 200px;
+    height: 100%;
+}
+
+
+.linksSocial {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    top: 600px;
+    left: 0;
+    max-height: 100px;
+    height: 100%;
+}
+
+
+.navbar a {
+    text-decoration: none;
+    color: #a9a9a9;
+    transition: color .3s linear;
+}
+
+.navbar a:hover {
+    cursor: pointer;
+    color: #5ac24e;
+}

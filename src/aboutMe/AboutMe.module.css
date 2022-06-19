@@ -1,6 +1,9 @@
 .aboutMe {
-    height: 100vh;
-    background-color: #8c4949;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1d1e21 0, #3e4246 100%);
 }
 
 .container {
@@ -10,35 +13,79 @@
     align-items: center;
 }
 
-.title {
-    background-color: #5A5B5F;
-    text-align: center;
-}
-
 .content {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
+
+    border: 1px solid green;
+
 }
 
 .info {
-    max-width: 300px;
+    max-width: 450px;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 23px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.text {
+    margin-bottom: 20px;
+}
+
+.text strong {
+    color: #5ac24e;
+    font-weight: 700;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+.links a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 30px;
+    background-color: rgba(255,255,255,.05);
+    margin-right: 20px;
+}
+
+.buttonLink {
+    padding: 10px 30px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.iconButton {
+    margin-right: 10px;
+}
+
+.linkSocial {
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+
+    font-size: 22px;
+    line-height: 42px;
+    text-align: center;
+
+}
+
+.iconSocial {
+    display: inline-block;
+    margin: 0;
+
 }
 
 .photo {
-    width: 450px;
-    height: 350px;
+    width: 500px;
+    height: 600px;
     background-color: #acb5d5;
-}
-
-
-@media (max-width: 1300px) {
-    .content {
-        justify-content: center;
-    }
-    .info {
-        text-align: center;
-    }
 }

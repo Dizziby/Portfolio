@@ -1,5 +1,6 @@
 .project {
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
     text-align: center;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, .05);
@@ -8,6 +9,7 @@
     border: 1px solid;
 }
 
+
 .description {
     padding: 15px;
 }
@@ -15,7 +17,6 @@
 .name {
     display: block;
     font-size: 16px;
-    color: #fff;
     font-weight: 700;
     cursor: pointer;
 }

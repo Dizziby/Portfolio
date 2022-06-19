@@ -1,6 +1,20 @@
 .container {
-    border: 1px solid;
     height: 100%;
     width: 60%;
     margin: 0 auto;
+    padding: 20px 0;
+
+    border: 1px solid palevioletred;
+}
+
+@media (max-width: 720px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 360px) {
+    .container {
+        width: 80%;
+    }
 }

@@ -1,24 +1,28 @@
 import React from 'react';
 import './App.css';
-import {Header} from "./header/Header";
-import {Main} from "./main/Main";
-import {AboutMe} from "./aboutMe/AboutMe";
-import {MyProject} from "./myProject/MyProject";
-import {MySkills} from "./mySkills/MySkills";
-import {Footer} from "./footer/Footer";
-import {Contacts} from "./contacts/Contacts";
+import {Main} from "./Main/Main";
+import {AboutMe} from "./AboutMe/AboutMe";
+import {MyProject} from "./MyProject/MyProject";
+import {Resume} from "./Resume/Resume";
+import {Footer} from "./Footer/Footer";
+import {Contacts} from "./Contacts/Contacts";
+import {Nav} from "./Nav/Nav";
+import {Navbar} from "./Navbar/Navbar";
 
 function App() {
-  return (
+
+    return (
     <div className="App">
-        <Header />
+        <Navbar />
+        <Nav />
         <Main />
         <AboutMe />
-        <MySkills />
+        <Resume />
         <MyProject />
         <Contacts />
-        <Footer />
+        {/*<Footer />*/}
     </div>
+
   );
 }
 

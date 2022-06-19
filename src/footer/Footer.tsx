@@ -3,6 +3,7 @@ import styles from "./Footer.module.css"
 import stylesContainer from "../common/styles/Container.module.css";
 import {Link} from "./link/Link";
 
+
 export const Footer = () => {
     return (
         <div className={styles.footer}>

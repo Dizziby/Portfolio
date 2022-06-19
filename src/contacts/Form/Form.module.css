@@ -1,0 +1,55 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.formInputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formInput, .formTextarea {
+    font-family: inherit;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: inherit;
+    border-bottom: 1px solid #8a8787;
+    transition: border-bottom-color .2s linear;
+}
+
+.formInput:focus, .formTextarea:focus {
+    border-bottom-color: #fff;
+}
+
+
+.formInput {
+    margin-bottom: 30px;
+    height: 50px;
+    flex: 0 0 48%;
+}
+
+.formTextarea {
+    width: 100%;
+    resize: none;
+}
+
+.formButton {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    color: inherit;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    padding: 30px 20px 20px;
+}
+
+@media (max-width: 1080px) {
+    .formInputs {
+        flex-direction: column;
+    }
+}
+

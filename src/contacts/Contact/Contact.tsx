@@ -9,7 +9,7 @@ type ContactPropsType = {
 
 export const Contact: React.FC<ContactPropsType> = (props) => {
     return (
-        <div className={`${stylesBlock.block}  ${styles.contact}`}>
+        <div className={`${stylesBlock.blockSmall}  ${styles.contact}`}>
             <div className={styles.icon}></div>
             <div className={styles.info}>
                 <h3>{props.name}</h3>

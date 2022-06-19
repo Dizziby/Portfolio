@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from "./MyProject.module.css"
 import stylesContainer from "../common/styles/Container.module.css"
-import {Project} from "./project/Project";
 import {Title} from "../common/components/Title/Title";
+import {Project} from "./Project/Project";
 
 type ProjectType = {
     id: number
