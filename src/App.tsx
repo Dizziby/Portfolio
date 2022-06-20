@@ -7,6 +7,7 @@ import {Contacts} from "./components/Contacts/Contacts";
 import {AboutMe} from "./components/AboutMe/AboutMe";
 import {Main} from "./components/Main/Main";
 import {Resume} from "./components/Resume/Resume";
+import {Navbar} from "./components/Navbar/Navbar";
 
 
 function App() {
