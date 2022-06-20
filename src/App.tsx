@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import {Main} from "./Main/Main";
-import {AboutMe} from "./AboutMe/AboutMe";
-import {MyProject} from "./MyProject/MyProject";
-import {Resume} from "./Resume/Resume";
-import {Contacts} from "./Contacts/Contacts";
-import {Nav} from "./Nav/Nav";
-import {Navbar} from "./Navbar/Navbar";
-import {Theme} from "./Theme/Theme";
+import {Theme} from "./components/UIKit/Theme/Theme";
+import {MyProject} from "./components/MyProject/MyProject";
+import {Nav} from "./components/Nav/Nav";
+import {Contacts} from "./components/Contacts/Contacts";
+import {AboutMe} from "./components/AboutMe/AboutMe";
+import {Main} from "./components/Main/Main";
+import {Resume} from "./components/Resume/Resume";
+
 
 function App() {
     return (
