@@ -1,0 +1,88 @@
+@import './src/common/styles/variables';
+@import './src/common/styles/mixins';
+
+.aboutMe {
+  @include page();
+
+  .container {
+    @include containerFlexColumn();
+
+    .content {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+
+      .info {
+        max-width: 450px;
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 23px;
+        font-weight: 200;
+        text-align: center;
+
+        .text {
+          margin-bottom: 20px;
+
+          strong {
+            color: $baseColor;
+            font-weight: 700;
+          }
+        }
+
+        .links {
+          display: flex;
+          justify-content: center;
+
+          a {
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            border-radius: 30px;
+            background-color: rgba(255, 255, 255, .05);
+            margin-right: 20px;
+            transition: color .2s linear;
+
+            &:hover {
+              color: $baseColor;
+            }
+          }
+
+          .buttonLink {
+            padding: 10px 30px;
+            font-size: 14px;
+            font-weight: 700;
+            margin-right: 20px;
+
+            .iconButton {
+              margin-right: 10px;
+            }
+          }
+
+          .linkSocial {
+            display: inline-block;
+            height: 44px;
+            width: 44px;
+
+            font-size: 22px;
+            line-height: 42px;
+            text-align: center;
+            margin: 0;
+
+            .iconButton {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+
+      .photo {
+        max-width: 400px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+

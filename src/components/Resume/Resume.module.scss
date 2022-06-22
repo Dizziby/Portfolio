@@ -1,0 +1,19 @@
+@import './src/common/styles/mixins';
+
+.resume {
+  @include page();
+
+  .container {
+    @include containerFlexColumn();
+
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+      height: 100%;
+      @media (max-width: 1080px) {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}
