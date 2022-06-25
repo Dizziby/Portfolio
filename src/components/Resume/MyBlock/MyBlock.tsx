@@ -15,8 +15,8 @@ export const MyBlock: React.FC<MyBlockPropsType> = (props) => {
         <div className={styles.myBlock}>
             <Subtitle firstWordTitle={props.firstWordTitle} restWord={props.restWord} className={styles.mediaSubtitle}/>
             <div className={styles.block}>
-                {props.placeWorkStudy.map(el => {
-                        return <div className={styles.blockItem}>
+                {props.placeWorkStudy.map((el, index) => {
+                        return  <div key={index} className={styles.blockItem}>
                             <div className={styles.name}>{el.name}</div>
                             <div className={styles.date}>{el.date}</div>
                             <div className={styles.description}>{el.description}</div>

@@ -3,7 +3,6 @@ import styles from "./Resume.module.scss"
 import stylesContainer from "../../common/styles/Container.module.scss"
 import {SkillsBlock} from "./SkillsBlock/SkillsBlock";
 import {MyBlock} from "./MyBlock/MyBlock";
-import {Title} from "../UIKit/Title/Title";
 import {TitleBackground} from "../UIKit/TitleBackground/TitleBackground";
 
 export type PlaceWorkStudyType = {
@@ -42,14 +41,14 @@ export const Resume = () => {
                 restWord: "Experience",
                 placeWorkStudy: [
                     {
-                        name: "Web Development",
-                        date: "2013-Present | Facebook Inc.",
-                        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+                        name: "YOUR COMPANY CAN BE HERE",
+                        date: "2012-Present | City",
+                        description: "Front-end Developer"
                     },
                     {
-                        name: "Web Development",
-                        date: "2013-Present | Facebook Inc.",
-                        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+                        name: "VITEBSKGAZSTROY, VITEBSK WEC",
+                        date: "2017-2022 | Vitebsk",
+                        description: "Engineer"
                     },
                 ]
 
@@ -60,16 +59,15 @@ export const Resume = () => {
                 restWord: "Education",
                 placeWorkStudy: [
                     {
-                        name: "Web Development",
-                        date: "2010-2015 | PSU",
-                        description: "Engineer"
+                        name: "IT-INCUBATOR",
+                        date: "2022-Present | Minsk",
+                        description: "Front-end Developer"
                     },
                     {
-                        name: "Web Development",
-                        date: "2022-Present | IT-INCUBATOR.",
-                        description: "Developer "
+                        name: "POLOTSK STATE UNIVERSITY",
+                        date: "2010-2015 | Polotsk",
+                        description: "Civil engineer"
                     },
-
                 ]
             }
         ]
@@ -81,20 +79,20 @@ export const Resume = () => {
                 restWord: "Skills",
                 skills: [
                     {
-                        nameSkill: "Communication",
+                        nameSkill: "Hard-working",
                         percentage: 90
+                    },
+                    {
+                        nameSkill: "Communication",
+                        percentage: 80
                     },
                     {
                         nameSkill: "Team Work",
-                        percentage: 90
+                        percentage: 80
                     },
                     {
-                        nameSkill: "Leadership",
-                        percentage: 70
-                    },
-                    {
-                        nameSkill: "Language",
-                        percentage: 60
+                        nameSkill: "Calm",
+                        percentage: 100
                     },
 
                 ]
@@ -111,16 +109,16 @@ export const Resume = () => {
                         percentage: 90
                     },
                     {
-                        nameSkill: "HTML / CSS / JS / TS",
+                        nameSkill: "JS / TS",
+                        percentage: 90
+                    },
+                    {
+                        nameSkill: "HTML / CSS / SASS",
                         percentage: 80
                     },
                     {
                         nameSkill: "Storybook",
-                        percentage: 60
-                    },
-                    {
-                        nameSkill: "Test",
-                        percentage: 50
+                        percentage: 70
                     },
                 ]
             }
@@ -130,11 +128,10 @@ export const Resume = () => {
             <div className={styles.resume}>
                 <div className={`${stylesContainer.container} ${styles.container}`}>
                     <TitleBackground name={"RESUME"} />
-                    {/*<Title name={"RESUME"}/>*/}
                     <div className={styles.content}>
-                        {myBlock.map(el => <MyBlock firstWordTitle={el.firstWordTitle} restWord={el.restWord}
+                        {myBlock.map(el => <MyBlock key={el.id} firstWordTitle={el.firstWordTitle} restWord={el.restWord}
                                                     placeWorkStudy={el.placeWorkStudy}/>)}
-                        {skillsBlock.map(el => <SkillsBlock firstWordTitle={el.firstWordTitle} restWord={el.restWord} skills={el.skills}/>)}
+                        {skillsBlock.map(el => <SkillsBlock key={el.id} firstWordTitle={el.firstWordTitle} restWord={el.restWord} skills={el.skills}/>)}
                     </div>
                 </div>
             </div>

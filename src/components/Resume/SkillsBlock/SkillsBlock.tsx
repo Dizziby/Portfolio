@@ -15,8 +15,8 @@ export const SkillsBlock: React.FC<ResumeBlockPropsType> = (props) => {
             <Subtitle firstWordTitle={props.firstWordTitle} restWord={props.restWord} className={styles.mediaSubtitle}/>
 
             <div className={styles.block}>
-                {props.skills.map(el => {
-                    return <div>
+                {props.skills.map((el, index) => {
+                    return <div key={index}>
                         <div className={styles.name}>{el.nameSkill}</div>
                         <div className={styles.progress}>
                             <div className={styles.percentage} style={{width: `${el.percentage}%`}}>

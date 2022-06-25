@@ -43,16 +43,19 @@ export const Theme = () => {
 
 
     const [theme, setTheme] = useState<ThemeType>("green")
-    const [show, setSnow] = useState<boolean>(false)
+    const [show, setShow] = useState<boolean>(false)
 
     const showHideMenu = () => {
-        setSnow(!show)
+        setShow(!show)
     }
     const changeTheme = (theme: ThemeType) => {
         setTheme(theme)
-        setSnow(!show)
+        setShow(!show)
     }
 
+    const onBlurHandler = () => {
+        setTimeout(() => {setShow(!show)}, 100)
+    }
 
     useEffect(() => {
             const fontColor = `var(--font-color-${theme})`
@@ -64,12 +67,12 @@ export const Theme = () => {
 
     return (
         <div className={styles.theme}>
-            <span className={styles.themeButton} onClick={showHideMenu}><FontAwesomeIcon onBlur={showHideMenu}
+            <span className={styles.themeButton} onMouseUp={showHideMenu} tabIndex={0} onBlur={onBlurHandler}><FontAwesomeIcon onBlur={showHideMenu}
                                                                                          icon={faDroplet} size={"2x"}/>
             </span>
             <span className={classNameShow}>
-                {colors.map(el => {
-                    return <span className={styles.item} onClick={() => changeTheme(el.color)}>
+                {colors.map((el, index) => {
+                    return  <span key={index} className={styles.item} onClick={() => changeTheme(el.color)}>
                     <FontAwesomeIcon
                         icon={faDroplet} size={"2x"} style={{color: el.hex}}/>
                 </span>

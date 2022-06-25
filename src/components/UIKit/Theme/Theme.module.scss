@@ -3,13 +3,14 @@
 .theme {
   tab-index: 0;
 
+
+
   .themeButton {
     position: fixed;
     top: 5px;
     left: 0;
     width: 50px;
     height: 50px;
-    background-color: inherit;
     color: $baseColor;
     border: none;
     z-index: 3;
@@ -28,17 +29,49 @@
     z-index: 2;
     tab-index: 0;
 
+    @media (max-width: 720px) {
+      flex-direction: column;
+      transition: top .4s ease;
+      height: 250px;
+      width: 50px;
+    }
+
+
     .item {
       cursor: pointer;
+
+      &:first-child {
+        margin-left: 10px;
+
+        @media (max-width: 720px) {
+          margin-left: 0;
+        }
+      }
+
     }
   }
 
   .menuShow {
     left: 50px;
+    border-left: 1px solid grey;
+
+    @media (max-width: 720px) {
+      left: 0;
+      top: 50px;
+      border-left: none;
+      border-top: 1px solid grey;
+
+    }
+
   }
 
   .menuHide {
     left: -250px;
+    @media (max-width: 720px) {
+      left: 0;
+      top: -250px;
+    }
+
   }
 }
 

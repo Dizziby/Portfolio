@@ -5,7 +5,6 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faPenToSquare} from '@fortawesome/free-solid-svg-icons'
 import {faFacebook, faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import myPhoto from "../../assets/img/myPhoto.jpg"
-import {Title} from "../UIKit/Title/Title";
 import {TitleBackground} from "../UIKit/TitleBackground/TitleBackground";
 
 export const AboutMe = () => {
@@ -13,13 +12,11 @@ export const AboutMe = () => {
         <div className={styles.aboutMe}>
             <div className={`${stylesContainer.container} ${styles.container}`}>
                 <TitleBackground name={"ABOUT ME"}/>
-                {/*<Title name={"ABOUT ME"}/>*/}
                 <div className={styles.content}>
                     <div className={styles.info}>
                         <div className={styles.text}><strong>Hello, I’m a Pavel</strong>, web-developer based on
                             Vitebsk.
-                            I have rich experience in web site design & building
-                            and customization. Also I am good at <strong>html, css, react, typescript.</strong></div>
+                            I have experience in creating SPA using <strong>React, Redux, Typescript, JS, HTML, CSS.</strong></div>
                         <div className={styles.links}>
                             <a className={styles.buttonLink} href="#"><FontAwesomeIcon className={styles.iconButton}
                                                                                        icon={faPenToSquare}/> Write

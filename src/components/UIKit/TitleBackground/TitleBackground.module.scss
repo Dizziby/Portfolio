@@ -1,9 +1,21 @@
 @import './src/common/styles/variables';
 
 .title {
-
   margin: 0;
-  color: rgba(255,255,255,.05);
-  font-size: 120px;
+  color: $backgroundColorBlock;
+  font-size: 110px;
   text-align: center;
+
+  @media (max-width: 1080px) {
+    font-size: 65px;
+  }
+
+  @media (max-width: 720px) {
+    font-size: 45px;
+  }
+
+  @media (max-width: 360px) {
+    font-size: 30px;
+  }
+
 }
