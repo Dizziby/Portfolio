@@ -1,5 +1,6 @@
-import React from 'react';
-import styles from "./Subtitle.module.scss";
+import React from "react"
+
+import styles from "./Subtitle.module.scss"
 
 type SubtitlePropsType = {
     firstWordTitle: string
@@ -7,8 +8,8 @@ type SubtitlePropsType = {
     className?: string
 }
 
-export const Subtitle: React.FC<SubtitlePropsType> = (props) => {
-    return (
-        <div className={props.className ? `${styles.subtitle} ${props.className}` : styles.subtitle}><span>{props.firstWordTitle}</span> {props.restWord}</div>
-    );
-};
+export const Subtitle: React.FC<SubtitlePropsType> = ({ firstWordTitle, restWord, className }) => (
+    <div className={className ? `${styles.subtitle} ${className}` : styles.subtitle}>
+        <span>{firstWordTitle}</span> {restWord}
+    </div>
+)

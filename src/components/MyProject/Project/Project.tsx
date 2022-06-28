@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react"
+
 import styles from "./Project.module.scss"
 
 type ProjectType = {
@@ -10,14 +11,16 @@ type ProjectType = {
     }
 }
 
-export const Project: React.FC<ProjectType> = (props) => {
-    return (
-        <div className={styles.project}>
-            <a href={`${props.url}`} className={styles.logo} style={props.style} target="_blank"> </a>
-            <div className={styles.description}>
-                <a className={styles.name}>{props.title}</a>
-                <span className={styles.category}>{props.description}</span>
-            </div>
+export const Project: React.FC<ProjectType> = ({ title, description, url, style }) => (
+    <div className={styles.project}>
+        <a href={`${url}`} className={styles.logo} style={style} target="_blank" rel="noreferrer">
+            {" "}
+        </a>
+        <div className={styles.description}>
+            <a href="/#" className={styles.name}>
+                {title}
+            </a>
+            <span className={styles.category}>{description}</span>
         </div>
-    );
-};
+    </div>
+)

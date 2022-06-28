@@ -1,4 +1,5 @@
-import React, {ReactElement} from 'react';
+import React, { ReactElement } from "react"
+
 import styles from "./Contact.module.scss"
 
 type ContactPropsType = {
@@ -7,14 +8,12 @@ type ContactPropsType = {
     icon: ReactElement
 }
 
-export const Contact: React.FC<ContactPropsType> = (props) => {
-    return (
-        <div className={styles.contact}>
-            <div className={styles.icon}>{props.icon}</div>
-            <div className={styles.info}>
-                <h3>{props.name}</h3>
-                <p className={styles.text}>{props.text}</p>
-            </div>
+export const Contact: React.FC<ContactPropsType> = ({ name, icon, text }) => (
+    <div className={styles.contact}>
+        <div className={styles.icon}>{icon}</div>
+        <div className={styles.info}>
+            <h3>{name}</h3>
+            <p className={styles.text}>{text}</p>
         </div>
-    );
-};
+    </div>
+)

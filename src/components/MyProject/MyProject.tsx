@@ -1,11 +1,13 @@
-import React from 'react';
-import styles from "./MyProject.module.scss"
-import stylesContainer from "../../common/styles/Container.module.scss"
-import {Project} from "./Project/Project";
-import todolist from "../../assets/img/todolist.png"
-import socialNetwork from "../../assets/img/socialNetwork.png"
+import React, { ReactElement } from "react"
+
 import landingPage from "../../assets/img/landingPage.png"
-import {TitleBackground} from "../UIKit/TitleBackground/TitleBackground";
+import socialNetwork from "../../assets/img/socialNetwork.png"
+import todolist from "../../assets/img/todolist.png"
+import stylesContainer from "../../common/styles/Container.module.scss"
+import { TitleBackground } from "../UIKit/TitleBackground/TitleBackground"
+
+import styles from "./MyProject.module.scss"
+import { Project } from "./Project/Project"
 
 type ProjectType = {
     id: number
@@ -17,52 +19,58 @@ type ProjectType = {
     }
 }
 
-export const MyProject = () => {
-
+export const MyProject = (): ReactElement => {
     const todolistImage = {
-        backgroundImage: `url(${todolist})`
+        backgroundImage: `url(${todolist})`,
     }
 
     const socialNetworkImage = {
-        backgroundImage: `url(${socialNetwork})`
+        backgroundImage: `url(${socialNetwork})`,
     }
 
     const landingPageImage = {
-        backgroundImage: `url(${landingPage})`
+        backgroundImage: `url(${landingPage})`,
     }
 
-
-    const projects: Array <ProjectType> = [
+    const projects: Array<ProjectType> = [
         {
             id: 1,
             title: "Social network",
             description: "React",
             url: "https://dizziby.github.io/React-Social-Network-TS/",
-            logo: socialNetworkImage
+            logo: socialNetworkImage,
         },
         {
             id: 2,
             title: "Todolist",
             description: "React",
-            url: "#",
-            logo: todolistImage
+            url: "https://dizziby.github.io/todoList/",
+            logo: todolistImage,
         },
         {
             id: 3,
             title: "Landing page",
             description: "HTML",
-            url: "#",
-            logo: landingPageImage
+            url: "https://dizziby.github.io/landing-page/",
+            logo: landingPageImage,
         },
     ]
     return (
         <div className={styles.myProject}>
-            <TitleBackground name={"MY PROJECT"} />
+            <TitleBackground name="MY PROJECT" />
             <div className={`${stylesContainer.container} ${styles.container}`}>
                 <div className={styles.project}>
-                    {projects.map(el => <Project key={el.id} title={el.title} description={el.description} url={el.url} style={el.logo}/>)}
+                    {projects.map(el => (
+                        <Project
+                            key={el.id}
+                            title={el.title}
+                            description={el.description}
+                            url={el.url}
+                            style={el.logo}
+                        />
+                    ))}
                 </div>
             </div>
         </div>
-    );
-};
+    )
+}
