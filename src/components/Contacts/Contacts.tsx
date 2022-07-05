@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react"
+import React, { ReactElement, useState } from "react"
 
 import { faAt, faLocationDot, faPhone, faSquareCheck } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -10,6 +10,7 @@ import { TitleBackground } from "../UIKit/TitleBackground/TitleBackground"
 import { Contact } from "./Contact/Contact"
 import styles from "./Contacts.module.scss"
 import { Form } from "./Form/Form"
+import { Snackbar } from "./Snackbar/Snackbar"
 
 type ContactType = {
     id: number
@@ -28,10 +29,13 @@ export const Contacts = (): ReactElement => {
 
     const contacts: Array<ContactType> = [
         { id: 1, name: "Phone", text: "+375 29 29169**", icon: phone },
-        { id: 2, name: "Email", text: "Dizzi_**@mail.ru", icon: email },
+        { id: 2, name: "Email", text: "Dizzi_by@mail.ru", icon: email },
         { id: 3, name: "Address", text: "Vitebsk, Belarus", icon: address },
         { id: 4, name: "Freelance", text: "Available", icon: freelance },
     ]
+
+    const [showSnackbar, setShowSnackbar] = useState<boolean>(true)
+    const [sendMessage, setSendMessage] = useState<string>("Can't send form. Retry in 5 seconds.")
 
     return (
         <div className={styles.contacts}>
@@ -56,7 +60,14 @@ export const Contacts = (): ReactElement => {
                             restWord="Form"
                             className={styles.mediaSubtitle}
                         />
-                        <Form />
+                        <Form setSendMessage={setSendMessage} setShowSnackbar={setShowSnackbar} />
+                    </div>
+                    <div className={styles.snackbar}>
+                        <Snackbar
+                            show={showSnackbar}
+                            setShow={show => setShowSnackbar(show)}
+                            sendMessage={sendMessage}
+                        />
                     </div>
                 </div>
             </div>

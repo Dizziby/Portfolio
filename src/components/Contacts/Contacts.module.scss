@@ -5,6 +5,7 @@
 
   .container {
     @include containerFlexColumn();
+    padding-bottom: 0;
 
     .content {
       max-width: 1080px;
@@ -31,6 +32,11 @@
             align-items: center;
           }
         }
+      }
+      .snackbar {
+        margin: 10px auto 0;
+        max-height: 50px;
+        max-width: 320px;
       }
     }
   }

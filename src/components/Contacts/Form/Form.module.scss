@@ -46,6 +46,16 @@
         border-bottom-color: #fff;
       }
     }
+
+    .formInputError {
+      border-bottom: 1px solid #982525;
+
+      &:focus {
+        border-bottom-color: #982525;
+      }
+    }
+
+
   }
 
   .formTextarea {
@@ -66,6 +76,14 @@
     }
   }
 
+  .formTextareaError {
+    border-bottom: 1px solid #982525;
+
+    &:focus {
+      border-bottom-color: #982525;
+    }
+  }
+
   .formButton {
     font-family: inherit;
     font-size: 14px;
@@ -80,6 +98,7 @@
       margin-left: 5px;
       transition: margin-left .2s linear;
     }
+
     &:hover .icon {
       margin-left: 8px;
     }

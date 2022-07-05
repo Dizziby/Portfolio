@@ -45,6 +45,11 @@
   .description {
     padding: 15px;
 
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
     .name {
       display: block;
       font-size: 16px;

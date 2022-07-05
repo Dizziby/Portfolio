@@ -48,8 +48,8 @@ export const Theme = (): ReactElement => {
     const showHideMenu = (): void => {
         setShow(!show)
     }
-    const changeTheme = (): void => {
-        setTheme(theme)
+    const changeTheme = (color: ThemeType): void => {
+        setTheme(color)
         setShow(!show)
     }
 
@@ -81,7 +81,7 @@ export const Theme = (): ReactElement => {
             </span>
             <span className={classNameShow}>
                 {colors.map((el, index) => (
-                    <span key={index} className={styles.item} onClick={() => changeTheme()}>
+                    <span key={index} className={styles.item} onClick={() => changeTheme(el.color)}>
                         <FontAwesomeIcon icon={faDroplet} size="2x" style={{ color: el.hex }} />
                     </span>
                 ))}
