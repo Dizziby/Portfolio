@@ -1,36 +1,10 @@
 import React, { ReactElement } from "react"
 
-import stylesContainer from "../../common/styles/Container.module.scss"
 import { TitleBackground } from "../UIKit/TitleBackground/TitleBackground"
 
 import { MyBlock } from "./MyBlock/MyBlock"
 import styles from "./Resume.module.scss"
 import { SkillsBlock } from "./SkillsBlock/SkillsBlock"
-
-export type PlaceWorkStudyType = {
-    name: string
-    date: string
-    description: string
-}
-
-type MyBlockType = {
-    id: number
-    firstWordTitle: string
-    restWord: string
-    placeWorkStudy: Array<PlaceWorkStudyType>
-}
-
-export type SkillType = {
-    nameSkill: string
-    percentage: number
-}
-
-type SkillsBlockType = {
-    id: number
-    firstWordTitle: string
-    restWord: string
-    skills: Array<SkillType>
-}
 
 export const Resume = (): ReactElement => {
     const myBlock: Array<MyBlockType> = [
@@ -121,7 +95,7 @@ export const Resume = (): ReactElement => {
 
     return (
         <div className={styles.resume}>
-            <div className={`${stylesContainer.container} ${styles.container}`}>
+            <div className={styles.container}>
                 <TitleBackground name="RESUME" />
                 <div className={styles.content}>
                     {myBlock.map(el => (
@@ -144,4 +118,31 @@ export const Resume = (): ReactElement => {
             </div>
         </div>
     )
+}
+
+// types
+
+export type PlaceWorkStudyType = {
+    name: string
+    date: string
+    description: string
+}
+
+type MyBlockType = {
+    id: number
+    firstWordTitle: string
+    restWord: string
+    placeWorkStudy: Array<PlaceWorkStudyType>
+}
+
+export type SkillType = {
+    nameSkill: string
+    percentage: number
+}
+
+type SkillsBlockType = {
+    id: number
+    firstWordTitle: string
+    restWord: string
+    skills: Array<SkillType>
 }

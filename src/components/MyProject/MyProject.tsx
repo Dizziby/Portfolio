@@ -3,21 +3,10 @@ import React, { ReactElement } from "react"
 import landingPage from "../../assets/img/landingPage.png"
 import socialNetwork from "../../assets/img/socialNetwork.png"
 import todolist from "../../assets/img/todolist.png"
-import stylesContainer from "../../common/styles/Container.module.scss"
 import { TitleBackground } from "../UIKit/TitleBackground/TitleBackground"
 
 import styles from "./MyProject.module.scss"
 import { Project } from "./Project/Project"
-
-type ProjectType = {
-    id: number
-    title: string
-    description: string
-    url: string
-    logo: {
-        backgroundImage: string
-    }
-}
 
 export const MyProject = (): ReactElement => {
     const todolistImage = {
@@ -58,7 +47,7 @@ export const MyProject = (): ReactElement => {
     return (
         <div className={styles.myProject}>
             <TitleBackground name="MY PROJECT" />
-            <div className={`${stylesContainer.container} ${styles.container}`}>
+            <div className={styles.container}>
                 <div className={styles.project}>
                     {projects.map(el => (
                         <Project
@@ -73,4 +62,16 @@ export const MyProject = (): ReactElement => {
             </div>
         </div>
     )
+}
+
+// types
+
+type ProjectType = {
+    id: number
+    title: string
+    description: string
+    url: string
+    logo: {
+        backgroundImage: string
+    }
 }

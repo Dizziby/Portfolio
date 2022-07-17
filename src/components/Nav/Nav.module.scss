@@ -1,5 +1,5 @@
 @import './src/common/styles/variables';
-
+@import './src/common/styles/mixins';
 .nav {
   position: fixed;
   top: 0;
@@ -16,6 +16,7 @@
   }
 
   .container {
+    @include container();
     display: flex;
     justify-content: flex-end;
     align-items: center;

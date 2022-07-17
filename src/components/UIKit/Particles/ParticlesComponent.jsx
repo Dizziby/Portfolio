@@ -1,19 +1,12 @@
 import Particles from "react-tsparticles"
 import { loadFull } from "tsparticles"
 
-// import main from "../../../img/main.jpg"
-
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export const ParticlesComponent = () => {
     // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
     const particlesInit = async main => {
-        console.log(main)
         await loadFull(main)
     }
-
-    // const particlesLoaded = (container) => {
-    //     console.log(container)
-    // }
 
     return (
         <div>

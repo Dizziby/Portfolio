@@ -13,11 +13,19 @@ type ProjectType = {
 
 export const Project: React.FC<ProjectType> = ({ title, description, url, style }) => (
     <div className={styles.project}>
-        <a href={`${url}`} className={styles.logo} style={style} target="_blank" rel="noreferrer">
-            {" "}
-        </a>
+        <div className={styles.logoWrapper}>
+            <a
+                href={`${url}`}
+                className={styles.logo}
+                style={style}
+                target="_blank"
+                rel="noreferrer"
+            >
+                {" "}
+            </a>
+        </div>
         <div className={styles.description}>
-            <a href="/#" className={styles.name}>
+            <a href={`${url}`} className={styles.name} target="_blank" rel="noreferrer">
                 {title}
             </a>
             <span className={styles.category}>{description}</span>

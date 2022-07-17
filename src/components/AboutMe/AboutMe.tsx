@@ -5,14 +5,13 @@ import { faPenToSquare } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import myPhoto from "../../assets/img/myPhoto.jpg"
-import stylesContainer from "../../common/styles/Container.module.scss"
 import { TitleBackground } from "../UIKit/TitleBackground/TitleBackground"
 
 import styles from "./AboutMe.module.scss"
 
 export const AboutMe = (): ReactElement => (
     <div className={styles.aboutMe}>
-        <div className={`${stylesContainer.container} ${styles.container}`}>
+        <div className={styles.container}>
             <TitleBackground name="ABOUT ME" />
             <div className={styles.content}>
                 <div className={styles.info}>

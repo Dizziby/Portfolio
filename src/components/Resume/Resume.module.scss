@@ -4,6 +4,7 @@
   @include page();
 
   .container {
+    @include container();
     @include containerFlexColumn();
 
     .content {

@@ -3,7 +3,6 @@ import React, { ReactElement, useState } from "react"
 import { faAt, faLocationDot, faPhone, faSquareCheck } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-import stylesContainer from "../../common/styles/Container.module.scss"
 import { Subtitle } from "../UIKit/Subtitle/Subtitle"
 import { TitleBackground } from "../UIKit/TitleBackground/TitleBackground"
 
@@ -11,13 +10,6 @@ import { Contact } from "./Contact/Contact"
 import styles from "./Contacts.module.scss"
 import { Form } from "./Form/Form"
 import { Snackbar } from "./Snackbar/Snackbar"
-
-type ContactType = {
-    id: number
-    name: string
-    text: string
-    icon: ReactElement
-}
 
 export const Contacts = (): ReactElement => {
     const phone = <FontAwesomeIcon className={styles.iconButton} icon={faPhone} size="2x" />
@@ -34,12 +26,12 @@ export const Contacts = (): ReactElement => {
         { id: 4, name: "Freelance", text: "Available", icon: freelance },
     ]
 
-    const [showSnackbar, setShowSnackbar] = useState<boolean>(true)
+    const [showSnackbar, setShowSnackbar] = useState<boolean>(false)
     const [sendMessage, setSendMessage] = useState<string>("Can't send form. Retry in 5 seconds.")
 
     return (
         <div className={styles.contacts}>
-            <div className={`${stylesContainer.container} ${styles.container}`}>
+            <div className={styles.container}>
                 <TitleBackground name="CONTACTS" />
                 <div className={styles.content}>
                     <div className={styles.contactsBlock}>
@@ -73,4 +65,13 @@ export const Contacts = (): ReactElement => {
             </div>
         </div>
     )
+}
+
+// types
+
+type ContactType = {
+    id: number
+    name: string
+    text: string
+    icon: ReactElement
 }
