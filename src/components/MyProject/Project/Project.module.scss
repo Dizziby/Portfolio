@@ -12,6 +12,7 @@
   &:last-child {
     margin: 0;
   }
+
   .logoWrapper {
     max-width: 800px;
     height: 420px;
@@ -64,6 +65,11 @@
       font-size: 16px;
       font-weight: 700;
       cursor: pointer;
+      transition: color .2s linear;
+
+      &:hover {
+        color: $baseColor;
+      }
     }
 
     .category {

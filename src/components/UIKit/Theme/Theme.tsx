@@ -54,10 +54,10 @@ export const Theme = (): ReactElement => {
     }
 
     const onBlurHandler = (): void => {
-        const ms = 100
+        const msTimeout = 100
         setTimeout(() => {
             setShow(!show)
-        }, ms)
+        }, msTimeout)
     }
 
     useEffect(() => {

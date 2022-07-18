@@ -11,6 +11,7 @@ import {
     faXmark,
 } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { NavLink } from "react-router-dom"
 
 import styles from "./Navbar.module.scss"
 
@@ -20,10 +21,10 @@ export const Navbar = (): ReactElement => {
     const linksPageFinal = showLinkPage ? `${styles.linksPageLeft}` : `${styles.linksPageTop}`
 
     const onBlurHandler = (): void => {
-        const ms = 100
-        setTimeout(() => {
-            setShowLinkPage(true)
-        }, ms)
+        // const ms = 100
+        // setTimeout(() => {
+        //     setShowLinkPage(true)
+        // }, ms)
     }
 
     const handleWindowResize = (): void => {
@@ -39,21 +40,46 @@ export const Navbar = (): ReactElement => {
     return (
         <div className={styles.navbar}>
             <div className={linksPageFinal}>
-                <a href="/#">
-                    <FontAwesomeIcon className={styles.icon} icon={faHouse} />
-                </a>
-                <a href="/#">
-                    <FontAwesomeIcon className={styles.icon} icon={faUser} />
-                </a>
-                <a href="/#">
-                    <FontAwesomeIcon className={styles.icon} icon={faGear} />
-                </a>
-                <a href="/#">
-                    <FontAwesomeIcon className={styles.icon} icon={faEnvelope} />
-                </a>
-                <a href="/#">
-                    <FontAwesomeIcon className={styles.icon} icon={faEye} />
-                </a>
+                <NavLink to="/">
+                    {({ isActive }) => (
+                        <FontAwesomeIcon
+                            className={isActive ? `${styles.iconActive}` : `${styles.icon}`}
+                            icon={faHouse}
+                        />
+                    )}
+                </NavLink>
+                <NavLink to="aboutme">
+                    {({ isActive }) => (
+                        <FontAwesomeIcon
+                            className={isActive ? styles.iconActive : styles.icon}
+                            icon={faUser}
+                        />
+                    )}
+                </NavLink>
+                <NavLink to="resume">
+                    {({ isActive }) => (
+                        <FontAwesomeIcon
+                            className={isActive ? styles.iconActive : styles.icon}
+                            icon={faGear}
+                        />
+                    )}
+                </NavLink>
+                <NavLink to="myproject">
+                    {({ isActive }) => (
+                        <FontAwesomeIcon
+                            className={isActive ? styles.iconActive : styles.icon}
+                            icon={faEnvelope}
+                        />
+                    )}
+                </NavLink>
+                <NavLink to="contacts">
+                    {({ isActive }) => (
+                        <FontAwesomeIcon
+                            className={isActive ? styles.iconActive : styles.icon}
+                            icon={faEye}
+                        />
+                    )}
+                </NavLink>
             </div>
             <div className={styles.linksSocial}>
                 <a href="https://www.facebook.com/dizzi.by" target="_blank" rel="noreferrer">

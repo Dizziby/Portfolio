@@ -95,8 +95,8 @@ export const Resume = (): ReactElement => {
 
     return (
         <div className={styles.resume}>
+            <TitleBackground name="RESUME" />
             <div className={styles.container}>
-                <TitleBackground name="RESUME" />
                 <div className={styles.content}>
                     {myBlock.map(el => (
                         <MyBlock

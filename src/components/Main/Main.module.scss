@@ -2,10 +2,11 @@
 
 .main {
   height: 100vh;
-  background: linear-gradient(135deg, #1d1e21 0, #3e4246 100%);
-  /*background: url('https://oir.mobi/uploads/posts/2019-11/1574906657_gory-norvegii-25.jpg') ;*/
+  //background: linear-gradient(135deg, #1d1e21 0, #3e4246 100%);
+  //background: url('https://oir.mobi/uploads/posts/2019-11/1574906657_gory-norvegii-25.jpg') ;
+  //background: url('https://oir.mobi/uploads/posts/2019-11/thumbs/1574906677_gory-norvegii-49.jpg');
+  background: url('https://oir.mobi/uploads/posts/2019-11/thumbs/1574906735_gory-norvegii-147.jpg');
   background-size: cover;
-  opacity: 1;
 
   .container {
     @include container();

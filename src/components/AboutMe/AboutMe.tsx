@@ -3,6 +3,7 @@ import React, { ReactElement } from "react"
 import { faFacebook, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import { faPenToSquare } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { NavLink } from "react-router-dom"
 
 import myPhoto from "../../assets/img/myPhoto.jpg"
 import { TitleBackground } from "../UIKit/TitleBackground/TitleBackground"
@@ -11,8 +12,8 @@ import styles from "./AboutMe.module.scss"
 
 export const AboutMe = (): ReactElement => (
     <div className={styles.aboutMe}>
+        <TitleBackground name="ABOUT ME" />
         <div className={styles.container}>
-            <TitleBackground name="ABOUT ME" />
             <div className={styles.content}>
                 <div className={styles.info}>
                     <div className={styles.text}>
@@ -21,10 +22,10 @@ export const AboutMe = (): ReactElement => (
                         <strong>React, Redux, Typescript, JS, HTML, CSS.</strong>
                     </div>
                     <div className={styles.links}>
-                        <a className={styles.buttonLink} href="/#">
+                        <NavLink className={styles.buttonLink} to="/contacts">
                             <FontAwesomeIcon className={styles.iconButton} icon={faPenToSquare} />{" "}
                             Write me
-                        </a>
+                        </NavLink>
                         <a
                             className={styles.linkSocial}
                             href="https://www.facebook.com/dizzi.by"
@@ -51,7 +52,13 @@ export const AboutMe = (): ReactElement => (
                         </a>
                     </div>
                 </div>
-                <img src={myPhoto} className={styles.photo} alt="myPhoto" />
+                <img
+                    src={myPhoto}
+                    className={styles.photo}
+                    alt="myPhoto"
+                    width={350}
+                    height={525}
+                />
             </div>
         </div>
     </div>

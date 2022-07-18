@@ -2,6 +2,8 @@ import React, { ReactElement } from "react"
 
 import Typed from "react-typed"
 
+import { ParticlesComponent } from "../UIKit/Particles/ParticlesComponent"
+
 import styles from "./Main.module.scss"
 
 export const Main = (): ReactElement => (
@@ -20,7 +22,7 @@ export const Main = (): ReactElement => (
         </div>
         <div style={{ position: "absolute", height: "500px" }}>
             <div className={styles.particle}>
-                {/* <ParticlesComponent /> */}
+                <ParticlesComponent />
                 {/* <ParticlesComponent2  /> */}
             </div>
         </div>

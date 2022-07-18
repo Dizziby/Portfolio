@@ -31,8 +31,8 @@ export const Contacts = (): ReactElement => {
 
     return (
         <div className={styles.contacts}>
+            <TitleBackground name="CONTACTS" />
             <div className={styles.container}>
-                <TitleBackground name="CONTACTS" />
                 <div className={styles.content}>
                     <div className={styles.contactsBlock}>
                         <Subtitle
