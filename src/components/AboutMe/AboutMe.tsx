@@ -6,6 +6,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { NavLink } from "react-router-dom"
 
 import myPhoto from "../../assets/img/myPhoto.jpg"
+import progressiveMyPhoto from "../../assets/img/progressiveMyPhoto.jpg"
+import { ProgressiveImg } from "../UIKit/ProgressiveImg/ProgressiveImg"
 import { TitleBackground } from "../UIKit/TitleBackground/TitleBackground"
 
 import styles from "./AboutMe.module.scss"
@@ -52,7 +54,8 @@ export const AboutMe = (): ReactElement => (
                         </a>
                     </div>
                 </div>
-                <img
+                <ProgressiveImg
+                    placeholderSrc={progressiveMyPhoto}
                     src={myPhoto}
                     className={styles.photo}
                     alt="myPhoto"
