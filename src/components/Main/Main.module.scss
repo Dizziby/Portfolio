@@ -4,9 +4,14 @@
   height: 100vh;
   //background: linear-gradient(135deg, #1d1e21 0, #3e4246 100%);
   //background: url('https://oir.mobi/uploads/posts/2019-11/1574906657_gory-norvegii-25.jpg') ;
-  //background: url('https://oir.mobi/uploads/posts/2019-11/thumbs/1574906677_gory-norvegii-49.jpg');
-  background: url('https://oir.mobi/uploads/posts/2019-11/thumbs/1574906735_gory-norvegii-147.jpg');
+  //background-image: url('https://i.postimg.cc/nH0PJKS3/uYek08W.jpg');
+  //background-image: url('https://i.postimg.cc/1PMLSQ29/photo-1505299916137-b69793a66907.jpg');
+  //background-image: url('https://i.postimg.cc/h4R0HpRz/photo-1505299916137-b69793a66907-2-1-1.jpg');
+  background-image: url('https://i.postimg.cc/HnKS5Cjp/photo-1505299916137-b69793a66907-2-1-1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
+
 
   .container {
     @include container();

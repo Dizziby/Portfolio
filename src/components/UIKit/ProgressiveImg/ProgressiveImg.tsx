@@ -1,13 +1,15 @@
 import React, { DetailedHTMLProps, useEffect, useState } from "react"
 
+import styles from "./ProgressiveImg.module.scss"
+
 type DefaultImgPropsType = DetailedHTMLProps<
     React.ImgHTMLAttributes<HTMLImageElement>,
     HTMLImageElement
 >
 
 type ProgressiveImgPropsType = DefaultImgPropsType & {
-    placeholderSrc: any
-    src: any
+    placeholderSrc: string
+    src: string
 }
 
 export const ProgressiveImg: React.FC<ProgressiveImgPropsType> = ({
@@ -16,7 +18,6 @@ export const ProgressiveImg: React.FC<ProgressiveImgPropsType> = ({
     ...props
 }) => {
     const [imgSrc, setImgSrc] = useState(placeholderSrc)
-
     useEffect(() => {
         const img = new Image()
         img.src = src
@@ -25,5 +26,8 @@ export const ProgressiveImg: React.FC<ProgressiveImgPropsType> = ({
         }
     }, [src])
 
-    return <img {...{ src: imgSrc, ...props }} alt={props.alt || ""} />
+    const customClass =
+        placeholderSrc && imgSrc === placeholderSrc ? `${styles.loading}` : `${styles.loaded}`
+
+    return <img {...{ src: imgSrc, ...props }} alt={props.alt || ""} className={customClass} />
 }
