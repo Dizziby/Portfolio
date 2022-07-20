@@ -5,15 +5,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import styles from "./Theme.module.scss"
 
-type ThemeType = "green" | "orange" | "red" | "violet" | "blue" | "pink"
-
-type ColorType = {
-    color: ThemeType
-    hex: string
-}
-
-type ColorsType = Array<ColorType>
-
 export const Theme = (): ReactElement => {
     const colors: ColorsType = [
         {
@@ -89,3 +80,14 @@ export const Theme = (): ReactElement => {
         </div>
     )
 }
+
+// types
+
+type ThemeType = "green" | "orange" | "red" | "violet" | "blue" | "pink"
+
+type ColorType = {
+    color: ThemeType
+    hex: string
+}
+
+type ColorsType = Array<ColorType>

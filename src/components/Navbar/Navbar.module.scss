@@ -61,7 +61,6 @@
     .iconActive {
       color: $baseColor;
     }
-
   }
 
   .linksSocial {
@@ -78,6 +77,10 @@
     transform: translate(75%, -80%);
 
     @media (max-width: 720px) {
+      display: none;
+    }
+
+    @media (max-height: 420px) {
       display: none;
     }
   }
@@ -99,7 +102,6 @@
       position: relative;
       transform: translate(-50%, 40%);
     }
-
   }
 
   a {

@@ -5,12 +5,6 @@ import { PlaceWorkStudyType } from "../Resume"
 
 import styles from "./MyBlock.module.scss"
 
-type MyBlockPropsType = {
-    firstWordTitle: string
-    restWord: string
-    placeWorkStudy: Array<PlaceWorkStudyType>
-}
-
 export const MyBlock: React.FC<MyBlockPropsType> = ({
     firstWordTitle,
     restWord,
@@ -33,3 +27,11 @@ export const MyBlock: React.FC<MyBlockPropsType> = ({
         </div>
     </div>
 )
+
+// types
+
+type MyBlockPropsType = {
+    firstWordTitle: string
+    restWord: string
+    placeWorkStudy: Array<PlaceWorkStudyType>
+}

@@ -1,3 +1,5 @@
+import React from "react"
+
 import Particles from "react-tsparticles"
 import { loadFull } from "tsparticles"
 
@@ -13,15 +15,12 @@ export const ParticlesComponent = () => {
             <Particles
                 id="tsparticles"
                 init={particlesInit}
-                // loaded={particlesLoaded}
                 height="10%"
                 options={{
                     background: {
                         color: {
                             value: "",
                         },
-                        // image: "url('https://oir.mobi/uploads/posts/2019-11/1574906657_gory-norvegii-25.jpg')",
-                        // size: 'cover'
                     },
 
                     fpsLimit: 120,

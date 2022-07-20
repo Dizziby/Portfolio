@@ -14,14 +14,19 @@ export const Resume = (): ReactElement => {
             restWord: "Experience",
             placeWorkStudy: [
                 {
-                    name: "YOUR COMPANY CAN BE HERE",
-                    date: "2012-Present | City",
-                    description: "Front-end Developer",
+                    name: "VITEBSK WEC",
+                    date: "2021-2022 | Vitebsk",
+                    description: "Engineer",
                 },
                 {
-                    name: "VITEBSKGAZSTROY, VITEBSK WEC",
-                    date: "2017-2022 | Vitebsk",
+                    name: "VITEBSKGAZSTROY",
+                    date: "2017-2021 | Vitebsk",
                     description: "Engineer",
+                },
+                {
+                    name: "VITEBSK STATE TECHNICAL COLLEGE",
+                    date: "2015-2017 | Vitebsk",
+                    description: "Teacher",
                 },
             ],
         },
@@ -32,8 +37,13 @@ export const Resume = (): ReactElement => {
             placeWorkStudy: [
                 {
                     name: "IT-INCUBATOR",
-                    date: "2022-Present | Minsk",
+                    date: "2022 | Minsk",
                     description: "Front-end Developer",
+                },
+                {
+                    name: "VITEBSK STATE ORDER OF PEOPLES' FRIENDSHIP MEDICAL UNIVERSITY",
+                    date: "2016-2017 | Vitebsk",
+                    description: "Teacher",
                 },
                 {
                     name: "POLOTSK STATE UNIVERSITY",

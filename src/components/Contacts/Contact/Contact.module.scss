@@ -24,6 +24,10 @@
       font-size: 15px;
       line-height: 1.7;
       color: #a9a9a9;
+
+      @media (max-width: 420px) {
+        font-size: 12px;
+      }
     }
   }
 

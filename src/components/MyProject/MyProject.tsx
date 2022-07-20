@@ -47,6 +47,7 @@ export const MyProject = (): ReactElement => {
     return (
         <div className={styles.myProject}>
             <TitleBackground name="MY PROJECT" />
+
             <div className={styles.container}>
                 <div className={styles.project}>
                     {projects.map(el => (

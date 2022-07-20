@@ -5,12 +5,6 @@ import { SkillType } from "../Resume"
 
 import styles from "./SkillsBlock.module.scss"
 
-type ResumeBlockPropsType = {
-    firstWordTitle: string
-    restWord: string
-    skills: Array<SkillType>
-}
-
 export const SkillsBlock: React.FC<ResumeBlockPropsType> = ({
     firstWordTitle,
     restWord,
@@ -35,3 +29,11 @@ export const SkillsBlock: React.FC<ResumeBlockPropsType> = ({
         </div>
     </div>
 )
+
+// types
+
+type ResumeBlockPropsType = {
+    firstWordTitle: string
+    restWord: string
+    skills: Array<SkillType>
+}

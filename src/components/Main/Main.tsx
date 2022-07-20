@@ -23,7 +23,6 @@ export const Main = (): ReactElement => (
         <div style={{ position: "absolute", height: "500px" }}>
             <div className={styles.particle}>
                 <ParticlesComponent />
-                {/* <ParticlesComponent2  /> */}
             </div>
         </div>
     </div>

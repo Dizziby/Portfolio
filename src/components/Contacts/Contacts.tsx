@@ -20,8 +20,8 @@ export const Contacts = (): ReactElement => {
     )
 
     const contacts: Array<ContactType> = [
-        { id: 1, name: "Phone", text: "+375 29 29169**", icon: phone },
-        { id: 2, name: "Email", text: "Dizzi_by@mail.ru", icon: email },
+        { id: 1, name: "Phone", text: "+375 29 2916957", icon: phone },
+        { id: 2, name: "Email", text: "pavelkukayeu@gmail.com", icon: email },
         { id: 3, name: "Address", text: "Vitebsk, Belarus", icon: address },
         { id: 4, name: "Freelance", text: "Available", icon: freelance },
     ]

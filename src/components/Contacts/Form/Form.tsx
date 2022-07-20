@@ -7,17 +7,6 @@ import { SubmitHandler, useForm } from "react-hook-form"
 
 import styles from "./Form.module.scss"
 
-type FormPropsType = {
-    setSendMessage: (errorMessage: string) => void
-    setShowSnackbar: (show: boolean) => void
-}
-
-type InputsType = {
-    name: string
-    email: string
-    message: string
-}
-
 export const Form: React.FC<FormPropsType> = ({
     setSendMessage,
     setShowSnackbar,
@@ -94,12 +83,25 @@ export const Form: React.FC<FormPropsType> = ({
                     {...register("message", { required: true })}
                 />
             </div>
-            <div>
-                <button type="submit" className={styles.formButton} disabled={disabledButton}>
+            <div className={disabledButton ? `${styles.formButton}` : ""}>
+                <button type="submit" className={styles.btn} disabled={disabledButton}>
                     Send Messagge{" "}
                     <FontAwesomeIcon className={styles.icon} icon={faArrowRightLong} />
                 </button>
             </div>
         </form>
     )
+}
+
+// types
+
+type FormPropsType = {
+    setSendMessage: (errorMessage: string) => void
+    setShowSnackbar: (show: boolean) => void
+}
+
+type InputsType = {
+    name: string
+    email: string
+    message: string
 }

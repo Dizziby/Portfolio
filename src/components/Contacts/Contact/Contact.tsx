@@ -2,12 +2,6 @@ import React, { ReactElement } from "react"
 
 import styles from "./Contact.module.scss"
 
-type ContactPropsType = {
-    name: string
-    text: string
-    icon: ReactElement
-}
-
 export const Contact: React.FC<ContactPropsType> = ({ name, icon, text }) => (
     <div className={styles.contact}>
         <div className={styles.icon}>{icon}</div>
@@ -17,3 +11,11 @@ export const Contact: React.FC<ContactPropsType> = ({ name, icon, text }) => (
         </div>
     </div>
 )
+
+// types
+
+type ContactPropsType = {
+    name: string
+    text: string
+    icon: ReactElement
+}
