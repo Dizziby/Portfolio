@@ -1,14 +1,12 @@
 import React, { ReactElement } from "react"
 
-import "./App.css"
-import { Routes, Route, Navigate, useLocation } from "react-router-dom"
-import { useTransition, animated } from "react-spring"
+import { Navigate, Route, Routes, useLocation } from "react-router-dom"
+import { animated, useTransition } from "react-spring"
 
 import { AboutMe } from "../components/AboutMe/AboutMe"
 import { Contacts } from "../components/Contacts/Contacts"
 import { Main } from "../components/Main/Main"
 import { MyProject } from "../components/MyProject/MyProject"
-// import { Nav } from "../components/Nav/Nav"
 import { Navbar } from "../components/Navbar/Navbar"
 import { Resume } from "../components/Resume/Resume"
 import { Theme } from "../components/UIKit/Theme/Theme"
@@ -18,15 +16,13 @@ const App = (): ReactElement => {
     const transitions = useTransition(location, {
         from: { opacity: 0.2 },
         enter: { opacity: 1 },
-        // leave: { opacity: 0 },
         config: { duration: 300 },
     })
 
     return (
-        <div className="App">
+        <div>
             <Theme />
             <Navbar />
-            {/* <Nav /> */}
             {transitions(props => (
                 <animated.div style={props}>
                     <Routes>
