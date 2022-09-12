@@ -14,19 +14,14 @@ export const Resume = (): ReactElement => {
             restWord: "Experience",
             placeWorkStudy: [
                 {
+                    name: "PROJECT WORK",
+                    date: "2022 | Vitebsk",
+                    description: "Frontend Developer (PART-TIME)",
+                },
+                {
                     name: "VITEBSK WEC",
-                    date: "2021-2022 | Vitebsk",
-                    description: "Engineer",
-                },
-                {
-                    name: "VITEBSKGAZSTROY",
-                    date: "2017-2021 | Vitebsk",
-                    description: "Engineer",
-                },
-                {
-                    name: "VITEBSK STATE TECHNICAL COLLEGE",
-                    date: "2015-2017 | Vitebsk",
-                    description: "Teacher",
+                    date: "2017-2022 | Vitebsk",
+                    description: "Engineer (FULL-TIME)",
                 },
             ],
         },
@@ -37,7 +32,7 @@ export const Resume = (): ReactElement => {
             placeWorkStudy: [
                 {
                     name: "IT-INCUBATOR",
-                    date: "2022 | Minsk",
+                    date: "2021-2022 | Minsk",
                     description: "Front-end Developer",
                 },
                 {
@@ -84,7 +79,7 @@ export const Resume = (): ReactElement => {
             restWord: "Skills",
             skills: [
                 {
-                    nameSkill: "React / Redux",
+                    nameSkill: "React / Redux / Redux Toolkit",
                     percentage: 90,
                 },
                 {

@@ -21,7 +21,7 @@ export const AboutMe = (): ReactElement => (
                     <div className={styles.text}>
                         <strong>Hello, I’m a Pavel</strong>, web-developer based on Vitebsk. I have
                         experience in creating SPA using{" "}
-                        <strong>React, Redux, Typescript, JS, HTML, CSS.</strong>
+                        <strong>React, Redux, Typescript, React Native, JS, HTML, CSS.</strong>
                     </div>
                     <div className={styles.links}>
                         <NavLink className={styles.buttonLink} to="/contacts">
