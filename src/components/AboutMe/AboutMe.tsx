@@ -20,8 +20,10 @@ export const AboutMe = (): ReactElement => (
                 <div className={styles.info}>
                     <div className={styles.text}>
                         <strong>Hello, I’m a Pavel</strong>, web-developer based on Vitebsk. I have
-                        experience in creating SPA using{" "}
-                        <strong>React, Redux, Typescript, React Native, JS, HTML, CSS.</strong>
+                        experience in creating apps using{" "}
+                        <strong>
+                            React, Redux, Next.js, Typescript, React Native, JS, HTML, CSS.
+                        </strong>
                     </div>
                     <div className={styles.links}>
                         <NavLink className={styles.buttonLink} to="/contacts">

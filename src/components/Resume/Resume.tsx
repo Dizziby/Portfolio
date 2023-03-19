@@ -14,13 +14,18 @@ export const Resume = (): ReactElement => {
             restWord: "Experience",
             placeWorkStudy: [
                 {
+                    name: "PLAN 9",
+                    date: "2022-PRESENT",
+                    description: "Frontend Developer (FULL-TIME)",
+                },
+                {
                     name: "PROJECT WORK",
-                    date: "2022 | Vitebsk",
+                    date: "2022",
                     description: "Frontend Developer (PART-TIME)",
                 },
                 {
-                    name: "VITEBSK WEC",
-                    date: "2017-2022 | Vitebsk",
+                    name: "VITEBSK CHP",
+                    date: "2017-2022",
                     description: "Engineer (FULL-TIME)",
                 },
             ],
