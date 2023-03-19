@@ -22,7 +22,7 @@ export const AboutMe = (): ReactElement => (
                         <strong>Hello, I’m a Pavel</strong>, web-developer based on Vitebsk. I have
                         experience in creating apps using{" "}
                         <strong>
-                            React, Redux, Next.js, Typescript, React Native, JS, HTML, CSS.
+                            React, Next.js, Redux Toolkit, Typescript, React Native, JS, HTML, CSS.
                         </strong>
                     </div>
                     <div className={styles.links}>

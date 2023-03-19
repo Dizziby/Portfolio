@@ -83,7 +83,7 @@ const skillsBlock: Array<SkillsBlockType> = [
         restWord: "Skills",
         skills: [
             {
-                nameSkill: "React / Redux / Redux Toolkit",
+                nameSkill: "React / Next.js",
                 percentage: 90,
             },
             {
@@ -95,8 +95,8 @@ const skillsBlock: Array<SkillsBlockType> = [
                 percentage: 80,
             },
             {
-                nameSkill: "Storybook",
-                percentage: 70,
+                nameSkill: "Redux Toolkit / Zustand",
+                percentage: 80,
             },
         ],
     },
