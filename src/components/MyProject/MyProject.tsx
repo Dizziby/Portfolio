@@ -3,7 +3,7 @@ import React, { ReactElement } from "react"
 import cards from "../../assets/img/cards.png"
 import landingPage from "../../assets/img/landingPage.png"
 import socialNetwork from "../../assets/img/socialNetwork.png"
-import todolist from "../../assets/img/toDoList.png"
+import todolist from "../../assets/img/todolist.png"
 import weather from "../../assets/img/weather.jpg"
 import { TitleBackground } from "../UIKit/TitleBackground/TitleBackground"
 

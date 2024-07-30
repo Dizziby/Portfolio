@@ -13,19 +13,19 @@ const myBlock: Array<MyBlockType> = [
         restWord: "Experience",
         placeWorkStudy: [
             {
+                name: "ROBOMED SYSTEMS",
+                date: "2023-PRESENT",
+                description: "Frontend Developer (FULL-TIME)",
+            },
+            {
                 name: "PLAN 9",
-                date: "2022-PRESENT",
+                date: "2022-2023",
                 description: "Frontend Developer (FULL-TIME)",
             },
             {
                 name: "PROJECT WORK",
                 date: "2022",
                 description: "Frontend Developer (PART-TIME)",
-            },
-            {
-                name: "VITEBSK CHP",
-                date: "2017-2022",
-                description: "Engineer (FULL-TIME)",
             },
         ],
     },
@@ -84,7 +84,7 @@ const skillsBlock: Array<SkillsBlockType> = [
         skills: [
             {
                 nameSkill: "React / Next.js",
-                percentage: 90,
+                percentage: 95,
             },
             {
                 nameSkill: "JS / TS",
@@ -92,11 +92,11 @@ const skillsBlock: Array<SkillsBlockType> = [
             },
             {
                 nameSkill: "HTML / CSS / SASS",
-                percentage: 80,
+                percentage: 90,
             },
             {
                 nameSkill: "Redux Toolkit / Zustand",
-                percentage: 80,
+                percentage: 85,
             },
         ],
     },
