@@ -23,7 +23,7 @@ const myBlock: Array<MyBlockType> = [
                 description: "Frontend Developer (FULL-TIME)",
             },
             {
-                name: "PROJECT WORK",
+                name: "PROJECTWORKS",
                 date: "2022",
                 description: "Frontend Developer (PART-TIME)",
             },
