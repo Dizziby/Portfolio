@@ -36,7 +36,7 @@ const myBlock: Array<MyBlockType> = [
         placeWorkStudy: [
             {
                 name: "IT-INCUBATOR",
-                date: "2021-2022 | Minsk",
+                date: "2021 | Minsk",
                 description: "Front-end Developer",
             },
             {
